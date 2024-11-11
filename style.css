@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.topArea {
+  background-color: #34344a;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.user-input {
+  padding-bottom: 20px;
+  width: 500px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.user-input input {
+  border-radius: 10px;
+  border: 0;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.user-input input::placeholder {
+  color: #34344a;
+}
+
+.pages-and-read {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#pages {
+  width: 65%;
+}
+
+.pages-and-read label {
+  text-align: start;
+  color: white;
+}
+
+.submitBtn {
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+
+  border: 0;
+  background-color: hsl(195, 100%, 44%);
+}
+
+.submitBtn:hover {
+  background-color: hsl(195, 100%, 34%);
+}
+
+.submitBtn:active {
+  background-color: hsl(195, 100%, 24%);
+}
+
+.booksArea {
+  padding: 30px;
+  background-color: #ffffff;
+  flex-grow: 1;
+
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.book {
+  cursor: pointer;
+
+  height: 360px;
+  width: 240px;
+
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book-top {
+  margin: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.book-top img {
+  cursor: pointer;
+}
+
+.copyright {
+  background-color: #007ea7;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

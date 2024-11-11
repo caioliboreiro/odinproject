@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyLibrary</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topArea">
+      <h1 class="logo">MyLibrary</h1>
+      <form class="user-input" action="">
+        <input
+          type="text"
+          placeholder="Book Name"
+          name="bookName"
+          id="bookName"
+        />
+        <input type="text" placeholder="Author" name="author" id="author" />
+
+        <div class="pages-and-read">
+          <input
+            type="text"
+            placeholder="Number of Pages"
+            name="pages"
+            id="pages"
+          />
+          <div>
+            <input type="checkbox" name="wasRead" id="wasRead" />
+            <label for="wasRead">The book was read</label>
+          </div>
+        </div>
+        <input
+          class="submitBtn"
+          type="submit"
+          value="Add a Book"
+          style="font-size: 1.5rem"
+        />
+      </form>
+    </header>
+
+    <main class="booksArea">
+      <!-- <div class="book" style="background-color: #00a8e0">
+        <div class="book-top">
+          <p>Aldous Huxley</p>
+          <img src="close.svg" alt="" />
+        </div>
+        <div class="book-middle">
+          <h2>Brave new World</h2>
+          <p>read</p>
+        </div>
+        <p>500 pages</p>
+      </div>
+
+      <div class="book" style="background-color: tomato">
+        <div class="book-top">
+          <p>Machiavelli</p>
+          <img src="close.svg" alt="" />
+        </div>
+        <div class="book-middle">
+          <h2>The prince</h2>
+          <p>not-read</p>
+        </div>
+        <p>96 pages</p>
+      </div> -->
+    </main>
+
+    <footer class="copyright">&copy; Copyright. All the rights reserved</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
