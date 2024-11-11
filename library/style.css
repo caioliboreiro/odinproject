@@ -1,0 +1,108 @@
+:root {
+  --bg-color: #49505d;
+  --primary: #222831;
+  --secondary: #76abae;
+  --font-color: #eeeeee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  font-family: "Helvetica", "Aria", sans-serif;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.heading {
+  min-height: 150px;
+  padding-bottom: 30px;
+  background-color: var(--primary);
+  font-size: 2rem;
+  color: var(--primary-color);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+}
+
+#bookInput {
+  font-size: 1rem;
+  padding: 10px 10px;
+  border-radius: 15px;
+}
+
+#bookInput::placeholder {
+  color: hsl(0, 1%, 66%);
+}
+
+.showButton,
+.addButton {
+  font-size: 1rem;
+  padding-inline: 20px;
+  padding: 10px 10px;
+  border-radius: 15px;
+  background-color: var(--secondary);
+  color: var(--font-color);
+  cursor: pointer;
+}
+
+.showButton:hover,
+.addButton:hover {
+  background-color: #507476;
+}
+
+.showButton:active,
+.addButton:active {
+  background-color: #354e4f;
+}
+
+.bookSection {
+  padding: 35px 0 35px;
+  width: 70%;
+  margin-inline: auto;
+  flex-grow: 1;
+
+  display: grid;
+  justify-content: center;
+  gap: 0.5rem;
+
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.book {
+  background-color: var(--secondary);
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.copyright {
+  min-height: 50px;
+  background-color: var(--secondary);
+  font-size: 1.1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 20px;
+}
