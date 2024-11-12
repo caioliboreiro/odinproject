@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyLibrary</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">MyLibrary</h1>
+      <button class="addBookBtn">Add a Book</button>
+    </header>
+
+    <dialog class="bookModal">
+      <div class="modalTop">
+        <h2 class="modalHeading">Adding a Book</h2>
+        <img class="closeModal" src="img/close.svg" alt="" />
+      </div>
+      <form action="">
+        <input
+          type="text"
+          name="bookName"
+          id="bookName"
+          placeholder="Book Name"
+        />
+        <input type="text" name="author" id="author" placeholder="Author" />
+        <input
+          type="text"
+          name="pagesNumber"
+          id="pagesNumber"
+          placeholder="Number of Pages"
+        />
+        <div class="checkboxArea">
+          <input type="checkbox" name="wasRead" id="wasRead" /><label
+            for="wasRead"
+          >
+            The book was read</label
+          >
+        </div>
+        <input class="submitBtn" type="submit" value="Add the Book" />
+      </form>
+    </dialog>
+
+    <main class="booksArea">
+      <div class="book">
+        <div class="topSection">
+          <p>George Orwell</p>
+          <img class="removeBtn" src="img/close.svg" alt="close button" />
+        </div>
+        <div class="midSection">
+          <h3>1984</h3>
+          <p>read</p>
+        </div>
+        <p>400 pages</p>
+      </div>
+    </main>
+
+    <footer class="copyright">&copy; Copyright. All the rights reserved</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

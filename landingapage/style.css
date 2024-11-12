@@ -1,0 +1,172 @@
+@font-face {
+  font-family: Roboto;
+  src: url(Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: RobotoLight;
+  src: url(Roboto-Light.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: Roboto;
+}
+
+#section1 {
+  height: 450px;
+  background-color: #1f2937;
+}
+
+#top {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  padding-top: 1rem;
+
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+#logo {
+  margin: 0;
+  margin-right: auto;
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+.secondaryText {
+  margin-top: 0;
+  font-size: 18px;
+  color: #f9faf8;
+  text-decoration: none;
+}
+
+#rest {
+  display: flex;
+  width: 75%;
+  margin: auto;
+  margin-top: 50px;
+  gap: 3rem;
+}
+
+#mainText {
+  margin: 0;
+  font-size: 48px;
+  font-weight: bolder;
+  color: #f9faf8;
+}
+
+#img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 900px;
+  background-color: #6d747d;
+}
+
+#signUp {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #3882f6;
+  color: #f9faf8;
+}
+
+#section2 {
+  height: 350px;
+  width: 70%;
+  margin: auto;
+}
+
+#random {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bolder;
+}
+
+#boxes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box {
+  border: 3px solid #3882f6;
+  border-radius: 13px;
+  height: 150px;
+  width: 150px;
+}
+
+#section3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  background-color: #e5e7eb;
+  height: 350px;
+}
+
+#quote {
+  margin: 0 auto;
+  width: 75%;
+  font-family: RobotoLight;
+  font-style: italic;
+  font-size: 36px;
+  color: #1f2937;
+  text-align: justify;
+}
+
+#quoter {
+  width: 75%;
+  margin: 0 auto;
+  font-weight: bold;
+  text-align: end;
+  font-size: 18px;
+}
+
+#section4 {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+}
+
+#blueRec {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #3882f6;
+  border-radius: 10px;
+  width: 75%;
+  height: 150px;
+  margin: auto;
+}
+
+#call {
+  color: #f9faf8;
+  margin: 0;
+}
+
+#altSignUp {
+  padding: 10px 30px;
+  border: 2px solid #f9faf8;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #3882f6;
+  color: #f9faf8;
+}
+
+footer {
+  display: flex;
+  background-color: #1f2937;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+#footerText {
+  margin-bottom: 0;
+}

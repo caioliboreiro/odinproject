@@ -1,0 +1,20 @@
+#blueBox {
+  height: 400px;
+  width: 600px;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 5px black;
+}
+
+#redBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 75px;
+  width: 75px;
+  background-color: tomato;
+  border: solid 5px darkred;
+}

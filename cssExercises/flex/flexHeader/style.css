@@ -1,0 +1,36 @@
+body {
+  /* margin: 0; */
+  font-family: "Times New Roman", Times, serif;
+}
+
+#myHeader {
+  background-color: bisque;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  margin: 0;
+  font-size: 3rem;
+  color: tomato;
+  background-color: white;
+  padding: 15px;
+  font-weight: bolder;
+}
+
+.otherItems {
+  margin: 0;
+  font-size: 2rem;
+  color: blue;
+  background-color: white;
+  padding: 10px;
+}
+
+span {
+  display: flex;
+  gap: 20px;
+}

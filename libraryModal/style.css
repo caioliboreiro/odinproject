@@ -1,0 +1,140 @@
+*:not(dialog) {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  color: #d1d1d1;
+
+  height: 400px;
+  max-height: 20vh;
+
+  background-color: #4c4c4c;
+  text-align: center;
+}
+
+.addBookBtn {
+  cursor: pointer;
+  margin-top: 20px;
+  color: #dbdbdb;
+  font-size: 1.5rem;
+  padding: 5px;
+  border-radius: 10px;
+  border: 0;
+  background-color: #30011e;
+}
+
+.addBookBtn:hover,
+.submitBtn:hover {
+  background-color: hsl(323, 96%, 15%);
+}
+
+.addBookBtn:active,
+.submitBtn:active {
+  background-color: hsl(323, 96%, 20%);
+}
+
+.bookModal {
+  border: 0;
+  color: #d1d1d1;
+  background-color: #4c4c4c;
+}
+
+.modalTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.bookModal form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.5rem;
+}
+
+.bookModal form input[type="text"] {
+  font-size: 1rem;
+  width: 300px;
+  border: 0;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.bookModal form input[type="checkbox"] {
+  accent-color: hsl(323, 96%, 10%);
+}
+
+.submitBtn {
+  margin-top: 15px;
+  color: #dbdbdb;
+  font-size: 1.5rem;
+  width: 300px;
+  background-color: hsl(323, 96%, 10%);
+  border: 0;
+  border-radius: 10px;
+}
+
+.booksArea {
+  padding: 30px;
+  color: #dbdbdb;
+  background-color: #636363;
+
+  flex-grow: 1;
+
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.book {
+  cursor: pointer;
+  padding: 5px;
+  height: 360px;
+  width: 240px;
+  background-color: #30011e;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.book:hover {
+  transform: scale(1.02);
+}
+
+.topSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.removeBtn,
+.closeModal {
+  cursor: pointer;
+}
+
+.removeBtn:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  color: #dbdbdb;
+  text-align: center;
+
+  padding: 5px;
+  background-color: #30011e;
+}

@@ -1,0 +1,148 @@
+@font-face {
+  font-family: Norse;
+  src: url(Norse-Bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #272727;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.image-area {
+  height: 100vh;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-image: url(plant.avif);
+  background-position: center;
+  background-size: cover;
+}
+
+.logo-area {
+  height: 140px;
+  width: 100%;
+  position: absolute;
+  top: 15%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  font-family: Norse;
+  color: white;
+  font-size: 6rem;
+}
+
+.image-area img {
+  max-width: auto;
+  max-height: 100vh;
+}
+
+.credit {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.credit a {
+  color: white;
+}
+
+.main-area {
+  background-color: #f9fafb;
+}
+
+.header-area {
+  width: 63%;
+  padding-left: 40px;
+  padding-bottom: 30px;
+  height: 32%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.header-area h1 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.user-input {
+  background-color: #ffffff;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 30px;
+}
+
+.user-input h1 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.input-area {
+  width: 70%;
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  gap: 20px;
+}
+
+.input-area label {
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+}
+
+.input-area input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 250px;
+  padding: 6px;
+  border: 1px solid #cdcdce;
+  border-radius: 5px;
+}
+
+.bottom {
+  padding-left: 40px;
+}
+
+.form-button {
+  margin-bottom: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  background-color: #596d48;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.log-in-link {
+  color: #596d48;
+  text-decoration: none;
+  font-weight: bold;
+}

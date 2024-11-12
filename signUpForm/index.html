@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <aside class="image-area">
+      <div class="logo-area"><h1 class="logo">Logo</h1></div>
+      <p class="credit">
+        Photo by <a href="">Halie West</a> on <a href="">Unplash</a>
+      </p>
+    </aside>
+
+    <main class="main-area">
+      <header class="header-area">
+        <h1>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em> to get started.
+        </h1>
+        <h1>You <em>know</em> you wanted to.</h1>
+      </header>
+
+      <form class="my-form" action="get">
+        <div class="user-input">
+          <h1>Let's do this!</h1>
+
+          <div class="input-area">
+            <div class="first-name-container">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" name="first-name" id="first-name" />
+            </div>
+
+            <div class="last-name-container">
+              <label for="last-name"> LAST NAME</label>
+              <input type="text" name="last-name" id="last-name" />
+            </div>
+
+            <div class="email-container">
+              <label for="email">EMAIL</label>
+              <input type="email" name="email" id="email" />
+            </div>
+
+            <div class="phone-number-container">
+              <label for="phone-number"> PHONE NUMBER</label>
+              <input type="text" name="phone-number" id="phone-number" />
+            </div>
+
+            <div class="password-container">
+              <label for="password">PASSWORD</label>
+              <input type="password" name="password" id="password" />
+            </div>
+
+            <div class="confirm-password">
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <button type="submit" class="form-button">Create Account</button>
+          <p>
+            Already have an account? <a class="log-in-link" href="">Log in</a>
+          </p>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
